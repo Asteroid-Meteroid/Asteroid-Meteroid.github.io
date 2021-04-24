@@ -21,17 +21,6 @@ var sprites = {
      step:     { x: 0,   y: -50, sprite: 'enemy_circle', health: 10,
                  B: 150, C: 1.2, E: 75 }
    };
-   //-----------------------------------------------
-   function alertFunc() {
-     var img = document. createElement("img");
-     img. src = "image/ZBOF.png";
-     var src = document. getElementById("game");
-     src. appendChild(img);
-   }
-   function gif() {
-     myVar = setTimeout(alertFunc, 3000);
-   }
-   //----------------------------------------------
    
    var OBJECT_PLAYER = 1,
        OBJECT_PLAYER_PROJECTILE = 2,
