@@ -2,7 +2,6 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Asteroid</title>
-  <link rel="icon" href="sm.png">
   <link rel="stylesheet" href="base.css" type="text/css" />
   <meta name="viewport" 
 
