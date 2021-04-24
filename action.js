@@ -145,7 +145,7 @@ var SpriteSheet = new function() {
     this.map = spriteData;
     this.image = new Image();
     this.image.onload = callback;
-    this.image.src = 'images/sprites.png';
+    this.image.src = 'sprites.png';
   };
 
   this.draw = function(ctx,sprite,x,y,frame) {
@@ -248,7 +248,7 @@ var GameBoard = function() {
 
   // The current list of objects
   this.objects = [];
-  this.cnt = {};
+  this.cnt = {
 
   // Add a new object to the object list
   this.add = function(obj) {
