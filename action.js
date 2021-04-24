@@ -190,6 +190,7 @@ var TitleScreen2 = function TitleScreen2(title,subtitle,s_subtitle,callback) {
   };
 
   this.draw = function(ctx) {
+    //ctx1.fillStyle = "#000000";
     ctx.fillStyle = "#FFF"
 
     ctx.font = "40px Stencil";
@@ -248,7 +249,7 @@ var GameBoard = function() {
 
   // The current list of objects
   this.objects = [];
-  this.cnt = {
+  this.cnt = {};
 
   // Add a new object to the object list
   this.add = function(obj) {
@@ -423,7 +424,7 @@ var TouchControls = function() {
   this.drawSquare = function(ctx,x,y,txt,on) {
     ctx.globalAlpha = on ? 0.9 : 0.6;
     //ctx.fillStyle =  "#CCC";
-    ctx.fillStyle =  "#1bdde8";
+    ctx.fillStyle =  "#FF0000";
     ctx.fillRect(x,y,blockWidth,blockWidth);
 
     //ctx.fillStyle = "#FFF";
@@ -500,7 +501,7 @@ var GamePoints = function() {
     ctx.save(); 
     ctx.font ="20px Papyrus";
     //ctx.font = "bold 18px arial";
-    ctx.fillStyle= "#1bdde8";
+    ctx.fillStyle= "#FF2400";
 
     var txt = "" + Game.points;
     var i = pointsLength - txt.length, zeros = "";
