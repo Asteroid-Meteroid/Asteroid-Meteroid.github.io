@@ -21,6 +21,18 @@ var sprites = {
      step:     { x: 0,   y: -50, sprite: 'enemy_circle', health: 10,
                  B: 150, C: 1.2, E: 75 }
    };
+   //-----------------------------------------------
+/*
+   function alertFunc() {
+     var img = document. createElement("img");
+     img. src = "image/ZBOF.png";
+     var src = document. getElementById("game");
+     src. appendChild(img);
+   }
+   function gif() {
+     myVar = setTimeout(alertFunc, 3000);
+   }*/
+   //----------------------------------------------
    
    var OBJECT_PLAYER = 1,
        OBJECT_PLAYER_PROJECTILE = 2,
@@ -39,7 +51,7 @@ var sprites = {
        Game.setBoard(1,new Starfield(50,0.6,100));
        Game.setBoard(2,new Starfield(100,1.0,50));
      }
-     Game.setBoard(3,new TitleScreen("Binary star",
+     Game.setBoard(3,new TitleScreen("Vector",
                                      "Tap to play level-1",
                                      playGame));
    };
@@ -57,7 +69,7 @@ var sprites = {
     }
     Game.setBoard(3,new Titlespcl(
                                   "Powered By:Asteroid"));  
-    Game.setBoard(3,new TitleScreen2("Binary star",
+    Game.setBoard(3,new TitleScreen2("Vector",
                                     "Tap to play",
                                     "Powered By:Asteroid",
                                     startGame));
@@ -287,13 +299,13 @@ var sprites = {
      // If the clear option is set,
      // make the background black instead of transparent
      if(clear) {
-       starCtx.fillStyle = "00fb62";
+       starCtx.fillStyle = "#2C3539";
        starCtx.fillRect(0,0,stars.width,stars.height);
      }
    
      // Now draw a bunch of random 2 pixel
      // rectangles onto the offscreen canvas
-     starCtx.fillStyle = "#1bdde8";
+     starCtx.fillStyle = "#E42217";
      starCtx.globalAlpha = opacity;
      for(var i=0;i<numStars;i++) {
        starCtx.fillRect(Math.floor(Math.random()*stars.width),
